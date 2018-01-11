@@ -18,14 +18,16 @@ class TestUuleGrabber(unittest.TestCase):
 
     def test_uule(self):
         """ Checks UULE code algorithm """
-        control_list = [("Lezigne,Pays de la Loire,France", "w+CAIQICIfTGV6aWduZSxQYXlzIGRlIGxhIExvaXJlLEZyYW5jZQ"),
+        control_list = [("Lezigne,Pays de la Loire,France",
+                         "w+CAIQICIfTGV6aWduZSxQYXlzIGRlIGxhIExvaXJlLEZyYW5jZQ"),
                         ("Reze,Pays de la Loire,France",
                          "w+CAIQICIcUmV6ZSxQYXlzIGRlIGxhIExvaXJlLEZyYW5jZQ"),
                         ("Chicago,Illinois,United States",
                          "w+CAIQICIeQ2hpY2FnbyxJbGxpbm9pcyxVbml0ZWQgU3RhdGVz"),
                         ("Washington,District of Columbia,United States",
                          "w+CAIQICItV2FzaGluZ3RvbixEaXN0cmljdCBvZiBDb2x1bWJpYSxVbml0ZWQgU3RhdGVz"),
-                        ("Jacksonville Beach,Florida,United States", "w+CAIQICIoSmFja3NvbnZpbGxlIEJlYWNoLEZsb3JpZGEsVW5pdGVkIFN0YXRlcw")]
+                        ("Jacksonville Beach,Florida,United States",
+                         "w+CAIQICIoSmFja3NvbnZpbGxlIEJlYWNoLEZsb3JpZGEsVW5pdGVkIFN0YXRlcw")]
         for value, expected in control_list:
             self.assertEqual(uule_grabber.uule(value),
                              expected, "Control value: {}".format(value))
