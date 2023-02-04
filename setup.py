@@ -7,6 +7,6 @@ setup(
     author="Kemal Ogun Isik",
     author_email="ogunisik@gmail.com",
     url="https://github.com/ogun/uule_grabber",
-    download_url="https://github.com/ogun/uule_grabber/archive/v0.1.4.tar.gz",
+    download_url="https://github.com/ogun/uule_grabber/archive/v0.1.5.tar.gz",
     classifiers=[],
 )
