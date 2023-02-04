@@ -2,7 +2,7 @@ from setuptools import setup
 setup(
     name="uule_grabber",
     packages=["uule_grabber"],
-    version="0.1.4",
+    version="0.1.5",
     description="Generates UULE codes for Google Search ",
     author="Kemal Ogun Isik",
     author_email="ogunisik@gmail.com",

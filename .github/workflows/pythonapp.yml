@@ -14,5 +14,9 @@ jobs:
       with:
         python-version: 3.x
     - name: Test application
-      run: |
-        python -m unittest discover -v -s "./test"
+      run: python -m unittest discover -v -s "./test"
+    - name: Publish package to TestPyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        repository_url: https://test.pypi.org/legacy/
