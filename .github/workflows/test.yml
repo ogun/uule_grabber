@@ -1,0 +1,17 @@
+name: Test Worker
+
+on: [push]
+
+jobs:
+  test:
+    name: Test Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Test package
+        run: python -m unittest discover -v -s "./test"
