@@ -1,0 +1,17 @@
+name: Test Workflow
+
+on: [push]
+
+jobs:
+  build:
+    name: Test Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Test Step
+        run: python -m unittest discover -v -s "./test"

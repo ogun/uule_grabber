@@ -33,6 +33,10 @@ class TestUuleGrabber(unittest.TestCase):
                 "BURGERHEIM, Bischöflich-Geistlicher-Rat-Josef-Zinnbauer-Straße 8, 84130 Dingolfing, Germany",
                 "w+CAIQICIdQlVSR0VSSEVJTSwgQmlzY2jDtmZsaWNoLUdlaXN0bGljaGVyLVJhdC1Kb3NlZi1aaW5uYmF1ZXItU3RyYcOfZSA4LCA4NDEzMCBEaW5nb2xmaW5nLCBHZXJtYW55",
             ),
+            (
+                "اصفهان، استان اصفهان، ایران",
+                "w+CAIQICIz2KfYtdmB2YfYp9mG2Iwg2KfYs9iq2KfZhiDYp9i12YHZh9in2YbYjCDYp9uM2LHYp9mG",
+            ),
         ]
         for value, expected in control_list:
             with self.subTest():
