@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - name: Test Step
+      - name: Test package
         run: python -m unittest discover -v -s "./test"
 
       - name: Publish package to TestPyPI
