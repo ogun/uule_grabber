@@ -31,11 +31,15 @@ class TestUuleGrabber(unittest.TestCase):
             ),
             (
                 "BURGERHEIM, Bischöflich-Geistlicher-Rat-Josef-Zinnbauer-Straße 8, 84130 Dingolfing, Germany",
-                "w+CAIQICIdQlVSR0VSSEVJTSwgQmlzY2jDtmZsaWNoLUdlaXN0bGljaGVyLVJhdC1Kb3NlZi1aaW5uYmF1ZXItU3RyYcOfZSA4LCA4NDEzMCBEaW5nb2xmaW5nLCBHZXJtYW55",
+                "w+CAIQICJdQlVSR0VSSEVJTSwgQmlzY2jDtmZsaWNoLUdlaXN0bGljaGVyLVJhdC1Kb3NlZi1aaW5uYmF1ZXItU3RyYcOfZSA4LCA4NDEzMCBEaW5nb2xmaW5nLCBHZXJtYW55",
             ),
             (
                 "اصفهان، استان اصفهان، ایران",
                 "w+CAIQICIz2KfYtdmB2YfYp9mG2Iwg2KfYs9iq2KfZhiDYp9i12YHZh9in2YbYjCDYp9uM2LHYp9mG",
+            ),
+            (
+                "مدينة زايد, منطقة الظفرة, أبو ظبي, الإمارات العربية المتحدة",
+                "w+CAIQICJr2YXYr9mK2YbYqSDYstin2YrYrywg2YXZhti32YLYqSDYp9mE2LjZgdix2KksINij2KjZiCDYuNio2YosINin2YTYpdmF2KfYsdin2Kog2KfZhNi52LHYqNmK2Kkg2KfZhNmF2KrYrdiv2Kk",
             ),
         ]
         for value, expected in control_list:

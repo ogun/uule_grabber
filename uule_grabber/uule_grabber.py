@@ -1,17 +1,18 @@
 """ Generates UULE codes for Google Search """
-import string
 import base64
-
-SECRET_LIST = (
-    list(string.ascii_uppercase)
-    + list(string.ascii_lowercase)
-    + list(string.digits)
-    + ["-", "_"]
-)
 
 
 def uule(city: str) -> str:
     """Creates UULE code"""
-    secret = SECRET_LIST[len(city.encode("utf-8")) % 64]
-    hashed = base64.standard_b64encode(city.encode()).decode().strip("=")
-    return f"w+CAIQICI{secret}{hashed}"
+    city_length = len(city.encode("utf-8"))
+
+    # v1 implementation details
+    # https://valentin.app/uule.html
+    hashed = (
+        base64.standard_b64encode(
+            bytearray([8, 2, 16, 32, 34, city_length]) + city.encode()
+        )
+        .decode()
+        .strip("=")
+    )
+    return f"w+{hashed}"
