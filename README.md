@@ -21,5 +21,4 @@ https://developers.google.com/adwords/api/docs/appendix/geotargeting
 
 ## Credits
 Ported to Python based on:
-- The PHP implementation: https://github.com/512banque/uule-grabber
-- The Elixir implementation: https://github.com/dkarter/uule_grabber
+- Google UULE parameter: https://valentin.app/uule.html

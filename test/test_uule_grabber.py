@@ -41,6 +41,14 @@ class TestUuleGrabber(unittest.TestCase):
                 "مدينة زايد, منطقة الظفرة, أبو ظبي, الإمارات العربية المتحدة",
                 "w+CAIQICJr2YXYr9mK2YbYqSDYstin2YrYrywg2YXZhti32YLYqSDYp9mE2LjZgdix2KksINij2KjZiCDYuNio2YosINin2YTYpdmF2KfYsdin2Kog2KfZhNi52LHYqNmK2Kkg2KfZhNmF2KrYrdiv2Kk",
             ),
+            (
+                "Corfu,Corfu,Decentralized Administration of Peloponnese, Western Greece and the Ionian,Greece",
+                "w+CAIQICJdQ29yZnUsQ29yZnUsRGVjZW50cmFsaXplZCBBZG1pbmlzdHJhdGlvbiBvZiBQZWxvcG9ubmVzZSwgV2VzdGVybiBHcmVlY2UgYW5kIHRoZSBJb25pYW4sR3JlZWNl",
+            ),
+            (
+                "فندق شنغريلا، وسط مدينة دبي",
+                "w+CAIQICIy2YHZhtiv2YIg2LTZhti62LHZitmE2KfYjCDZiNiz2Lcg2YXYr9mK2YbYqSDYr9io2Yo",
+            ),
         ]
         for value, expected in control_list:
             with self.subTest():
